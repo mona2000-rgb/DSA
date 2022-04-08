@@ -14,23 +14,23 @@ public class FindSubarrayWithGivenSum {
     int k=sc.nextInt();
     System.out.println( subarraySum(a,k));
     }
-            //NAIVE APPROACH
-    // static boolean subarraySum(int[]a,int k){
+          //  NAIVE APPROACH
+    static boolean subarraySum(int[]a,int k){
        
-    //     int n=a.length;
-    //     for(int i=0;i<n;i++){
-    //         int sum=0;
-    //         for(int j=i;j<n;j++){
-    //             sum=sum+a[j];
-    //             if(sum==k){
-    //                 return true;
-    //             }
-    //         }
-    //     }
-    //     return false;
-    // }
+        int n=a.length;
+        for(int i=0;i<n;i++){
+            int sum=0;
+            for(int j=i;j<n;j++){
+                sum=sum+a[j];
+                if(sum==k){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
-    //EFFICIENT APPROACH
+   
     
     
 }
