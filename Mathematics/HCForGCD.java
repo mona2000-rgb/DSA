@@ -24,15 +24,24 @@ public class HCForGCD {
 
     // EFFICIENT APPROACH(EUCLIDEAN ALGORITH)
 
-    static int findHCF(int a,int b){
-        while(a!=b){
-            if(a>b){
-              a=a-b;
-            }else{
-                b=b-a;
-            }
-        }
-        return a;
-    }
-    
+    // static int findHCF(int a,int b){
+    //     while(a!=b){
+    //         if(a>b){
+    //           a=a-b;
+    //         }else{
+    //             b=b-a;
+    //         }
+    //     }
+    //     return a;
+    // }
+
+        //OPTIMIZED OF EUCLIDEAN ALGORITH
+
+     static int findHCF(int a,int b){
+         if(b==0){
+             return a;
+         }else{
+             return findHCF(b,a%b);
+         }
+     }
 }
