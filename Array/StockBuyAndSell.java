@@ -1,4 +1,4 @@
-package Array;
+//package Array;
 import java.util.Scanner;
 public class StockBuyAndSell {
     public static void main(String[] args) {
